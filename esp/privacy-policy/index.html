@@ -130,6 +130,40 @@
           <div class="header_button_pair">
             <a href="../#contacts" class="main_button" onclick="scrollToSub()">Comenzar</a>
           </div>
+          <div class="lang_selector" style="display: flex; align-items: center; margin-left: 20px">
+            <a
+              href="/index.html"
+              style="
+                display: block;
+                padding-left: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 1px;
+                color: var(--Charcoal-gray, #111);
+                font-family: 'Roboto', sans-serif;
+                margin-right: 6px;
+              "
+              >En</a
+            >
+            <span
+              style="
+                display: block;
+                padding-left: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%;
+                letter-spacing: 1px;
+                color: var(--Charcoal-gray, #111);
+                font-family: 'Roboto', sans-serif;
+              "
+              >| Esp</span
+            >
+          </div>
           <div class="burger">
             <div class="burger_space" id="burger">
               <span class="stick"></span>
@@ -158,6 +192,51 @@
             </ul>
             <div class="header_button_pair mob_menu_buttons">
               <a href="../#contacts" class="main_button mob_button mob_menu_button">Comenzar</a>
+            </div>
+            <div
+              class="lang_selector_mobile"
+              style="
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 30px;
+              "
+            >
+              <a
+                href="/index.html"
+                style="
+                  display: block;
+                  padding-left: 5px;
+                  text-decoration: none;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 140%;
+                  letter-spacing: 1px;
+                  color: var(--Charcoal-gray, #111);
+                  font-family: 'Roboto', sans-serif;
+                  margin-right: 6px;
+                "
+                >En</a
+              >
+              <span
+                style="
+                  display: block;
+                  padding-left: 5px;
+                  text-decoration: none;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 140%;
+                  letter-spacing: 1px;
+                  color: var(--Charcoal-gray, #111);
+                  font-family: 'Roboto', sans-serif;
+                "
+                >| Esp</span
+              >
             </div>
           </div>
         </div>
@@ -605,5 +684,26 @@
       vgo('setTrackByDefault', true);
       vgo('process');
     </script>
+    <style>
+      @media (max-width: 1050px) {
+        .lang_selector {
+          display: none !important;
+        }
+        .lang_selector_mobile {
+          justify-content: center !important;
+          text-align: center !important;
+          width: 100%;
+          margin-top: 0 !important;
+          margin-bottom: 30px !important;
+        }
+      }
+      .lang_selector_mobile {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+    </style>
   </body>
 </html>
