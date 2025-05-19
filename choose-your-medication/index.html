@@ -137,6 +137,40 @@
               <span class="stick"></span>
             </div>
           </div>
+          <div class="lang_selector" style="display: flex; align-items: center; margin-left: 20px">
+            <span
+              style="
+                display: block;
+                padding-left: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%;
+                letter-spacing: 1px;
+                color: var(--Charcoal-gray, #111);
+                font-family: 'Roboto', sans-serif;
+                margin-right: 6px;
+              "
+              >En</span
+            >
+            <a
+              href="/esp/choose-your-medication/"
+              style="
+                display: block;
+                padding-left: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 1px;
+                color: var(--Charcoal-gray, #111);
+                font-family: 'Roboto', sans-serif;
+              "
+              >| Esp</a
+            >
+          </div>
         </nav>
         <div class="popup" id="popup">
           <!-- <img src="img/main/mobbgmenu.png" alt="moblogo" class="mob_menu_bgimage" /> -->
@@ -156,6 +190,43 @@
                 <a href="../privacy-policy/" class="nav_elem_mobile">Privacy Policy</a>
               </li> -->
             </ul>
+            <div
+              class="lang_selector_mobile"
+              style="display: flex; align-items: center; justify-content: center; margin-top: 20px"
+            >
+              <span
+                style="
+                  display: block;
+                  padding-left: 5px;
+                  text-decoration: none;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 140%;
+                  letter-spacing: 1px;
+                  color: var(--Charcoal-gray, #111);
+                  font-family: 'Roboto', sans-serif;
+                  margin-right: 6px;
+                "
+                >En</span
+              >
+              <a
+                href="/esp/choose-your-medication/"
+                style="
+                  display: block;
+                  padding-left: 5px;
+                  text-decoration: none;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 140%;
+                  letter-spacing: 1px;
+                  color: var(--Charcoal-gray, #111);
+                  font-family: 'Roboto', sans-serif;
+                "
+                >| Esp</a
+              >
+            </div>
             <!-- <div class="header_button_pair mob_menu_buttons">
               <a
                 href="../#contacts"
@@ -251,22 +322,33 @@
       AOS.init();
     </script>
     <script>
-      (function(e,t,o,n,p,r,i){
-          e.visitorGlobalObjectAlias=n;
-          e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){
-              (e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)
+      (function (e, t, o, n, p, r, i) {
+        e.visitorGlobalObjectAlias = n;
+        e[e.visitorGlobalObjectAlias] =
+          e[e.visitorGlobalObjectAlias] ||
+          function () {
+            (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(
+              arguments,
+            );
           };
-          e[e.visitorGlobalObjectAlias].l=(new Date).getTime();
-          r=t.createElement("script");
-          r.src=o;
-          r.async=true;
-          i=t.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(r,i);
-      })(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
-  
-      vgo('setAccount', '92812074');  // ActiveCampaign Account ID (actid)
+        e[e.visitorGlobalObjectAlias].l = new Date().getTime();
+        r = t.createElement('script');
+        r.src = o;
+        r.async = true;
+        i = t.getElementsByTagName('script')[0];
+        i.parentNode.insertBefore(r, i);
+      })(window, document, 'https://diffuser-cdn.app-us1.com/diffuser/diffuser.js', 'vgo');
+
+      vgo('setAccount', '92812074'); // ActiveCampaign Account ID (actid)
       vgo('setTrackByDefault', true);
       vgo('process');
-  </script>
+    </script>
+    <style>
+      @media (max-width: 1050px) {
+        .lang_selector {
+          display: none !important;
+        }
+      }
+    </style>
   </body>
 </html>

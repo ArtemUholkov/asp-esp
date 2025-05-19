@@ -225,10 +225,10 @@ header {
     width: 100%;
     padding-top: 50px;
     gap: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     list-style: disc;
     margin-left: 20px;
-    max-width: 200px;
+    max-width: 280px;
     padding-left: 20px;
   }
   li::marker {

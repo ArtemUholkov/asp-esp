@@ -161,3 +161,9 @@ body {
   z-index: 2;
   background: #f3f1f0;
 }
+
+@media (max-width: 1100px) {
+  .navbar_menu_mobile {
+    max-width: 280px;
+  }
+}
